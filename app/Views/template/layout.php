@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title><?= $judul; ?></title>
     <link rel="stylesheet" type="text/css"  href="<?= base_url('css/style.css'); ?>">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
