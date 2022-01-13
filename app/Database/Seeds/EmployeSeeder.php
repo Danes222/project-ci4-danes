@@ -9,7 +9,7 @@ class EmployeSeeder extends Seeder
     public function run()
     {
         //setting faker untuk data dari indonesia
-        $faker = \Faker\Factory::create('id_ID');
+        $faker = \Faker\Factory::create('deu_DEU');
         //buat 10 data
         for ($i = 0; $i < 10; $i++) {
             $data = [

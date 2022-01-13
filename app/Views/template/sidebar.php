@@ -5,5 +5,6 @@
         <li><a href="/dashboard/about">About</a></li>
         <li><a href="/dashboard/kalkulator">Kalkulator</a></li>
         <li><a href="/dashboard/employe">Employe</a></li>
+        <li><a href="/admin">Admin</a></li>
     </ul>
 </div>
