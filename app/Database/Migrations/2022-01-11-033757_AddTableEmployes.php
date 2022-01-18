@@ -35,7 +35,7 @@ class AddTableEmployes extends Migration
                 'type' => 'TIMESTAMP'
             ],
             'updated_at' => [
-                'type' => 'TIMESTAMP'
+                'type' => 'DATETIME'
             ],
         ]);
         $this->forge->addKey('id', true);

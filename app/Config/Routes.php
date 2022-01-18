@@ -43,6 +43,34 @@ $routes->post('/hitung/proses', 'Web::proses');
 $routes->get('/segitiga', 'Web::hitungSegitiga');
 $routes->post('/segitiga/proses', 'Web::prosesSegitiga');
 
+// ROUTES EMPLOYE
+$routes->get('/employe', 'Dashboard::employe',['filter' => 'auth']);
+$routes->get('/employe/save', 'Dashboard::save',['filter' => 'auth']);
+$routes->get('/employe/edit/(:any)', 'Dashboard::edit/$1',['filter' => 'auth']);
+$routes->post('/employe/update', 'Dashboard::update',['filter' => 'auth']);
+$routes->get('/employe/destroy/(:any)', 'Dashboard::destroy/$1',['filter' => 'auth']);
+
+// ROUTES ADMIN
+$routes->get('/admin', 'Admin::index',['filter' => 'auth']);
+$routes->get('/admin/save', 'Admin::save',['filter' => 'auth']);
+$routes->get('/admin/edit/(:any)', 'Admin::edit/$1',['filter' => 'auth']);
+$routes->post('/admin/update', 'Admin::update',['filter' => 'auth']);
+$routes->get('/admin/destroy/(:any)', 'Admin::destroy/$1',['filter' => 'auth']);
+
+// ROUTES DIVISION
+$routes->get('/division', 'Division::index',['filter' => 'auth']);
+$routes->get('/division/save', 'Division::save',['filter' => 'auth']);
+$routes->get('/division/edit/(:any)', 'Division::edit/$1',['filter' => 'auth']);
+$routes->post('/division/update', 'Division::update',['filter' => 'auth']);
+$routes->get('/division/destroy/(:any)', 'Division::destroy/$1',['filter' => 'auth']);
+
+// ROUTES AUTH
+$routes->get('/register', 'Auth::index');
+$routes->post('/daftar', 'Auth::register');
+$routes->get('/login', 'Auth::login');
+$routes->post('/cek_login', 'Auth::cek_login');
+$routes->get('/logout', 'Auth::logout');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
